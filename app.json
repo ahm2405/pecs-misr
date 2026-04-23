@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "PECS مصر",
+    "slug": "pecs-misr",
+    "version": "1.0.0",
+    "orientation": "landscape",
+    "scheme": "pecsmisr",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F0F4F8"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "يحتاج التطبيق للوصول إلى الصور لإضافة صور البطاقات",
+          "cameraPermission": "يحتاج التطبيق للكاميرا لالتقاط صور البطاقات"
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "ios": {
+      "bundleIdentifier": "com.pecsmisr.app",
+      "supportsTablet": true,
+      "requireFullScreen": true
+    },
+    "android": {
+      "package": "com.pecsmisr.app",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
