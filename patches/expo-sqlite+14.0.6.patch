@@ -1,0 +1,50 @@
+diff --git a/node_modules/expo-sqlite/build/SQLiteDatabase.js b/node_modules/expo-sqlite/build/SQLiteDatabase.js
+index 93f11a1..22155fb 100644
+--- a/node_modules/expo-sqlite/build/SQLiteDatabase.js
++++ b/node_modules/expo-sqlite/build/SQLiteDatabase.js
+@@ -1,6 +1,6 @@
+ import { EventEmitter } from 'expo-modules-core';
+-import ExpoSQLite from './ExpoSQLiteNext';
+-import { SQLiteStatement, } from './SQLiteStatement';
++import ExpoSQLite from './ExpoSQLiteNext.js';
++import { SQLiteStatement, } from './SQLiteStatement.js';
+ const emitter = new EventEmitter(ExpoSQLite);
+ /**
+  * A SQLite database.
+diff --git a/node_modules/expo-sqlite/build/SQLiteStatement.js b/node_modules/expo-sqlite/build/SQLiteStatement.js
+index c9e73f5..7c563dc 100644
+--- a/node_modules/expo-sqlite/build/SQLiteStatement.js
++++ b/node_modules/expo-sqlite/build/SQLiteStatement.js
+@@ -1,4 +1,4 @@
+-import { composeRow, composeRows, normalizeParams } from './paramUtils';
++import { composeRow, composeRows, normalizeParams } from './paramUtils.js';
+ /**
+  * A prepared statement returned by [`SQLiteDatabase.prepareAsync()`](#prepareasyncsource) or [`SQLiteDatabase.prepareSync()`](#preparesyncsource) that can be binded with parameters and executed.
+  */
+diff --git a/node_modules/expo-sqlite/build/hooks.js b/node_modules/expo-sqlite/build/hooks.js
+index 1d19fbb..88513ba 100644
+--- a/node_modules/expo-sqlite/build/hooks.js
++++ b/node_modules/expo-sqlite/build/hooks.js
+@@ -1,7 +1,7 @@
+ import { Asset } from 'expo-asset';
+ import React, { createContext, useContext, useEffect, useRef, useState } from 'react';
+-import ExpoSQLite from './ExpoSQLiteNext';
+-import { openDatabaseAsync } from './SQLiteDatabase';
++import ExpoSQLite from './ExpoSQLiteNext.js';
++import { openDatabaseAsync } from './SQLiteDatabase.js';
+ /**
+  * Create a context for the SQLite database
+  */
+diff --git a/node_modules/expo-sqlite/build/index.js b/node_modules/expo-sqlite/build/index.js
+index 0490c65..49602aa 100644
+--- a/node_modules/expo-sqlite/build/index.js
++++ b/node_modules/expo-sqlite/build/index.js
+@@ -1,4 +1,4 @@
+-export * from './SQLiteDatabase';
+-export * from './SQLiteStatement';
+-export * from './hooks';
++export * from './SQLiteDatabase.js';
++export * from './SQLiteStatement.js';
++export * from './hooks.js';
+ //# sourceMappingURL=index.js.map
+\ No newline at end of file

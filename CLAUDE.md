@@ -44,8 +44,8 @@ people #FFD700 · actions #4CAF50 · food #FF9800
 places #2196F3 · feelings #F44336 · other #9C27B0
 
 ## Current build status
-Last completed: bugfixes — audio_path DB write, unused imports, redundant GestureHandlerRootView
-Next up: npx expo start — test the app end-to-end
+Last completed: expo start working — Node 22 ESM patch + metro clean boot
+Next up: test on device (npx expo start, scan QR with Expo Go)
 
 - ✅ Phase 1 boilerplate — app.json, tsconfig.json, package.json, babel.config.js
 - ✅ types/index.ts — Card, Parent, Category, AudioStatus, SentenceCard
