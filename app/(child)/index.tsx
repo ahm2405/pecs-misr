@@ -4,14 +4,10 @@ import {
   StyleSheet,
   useWindowDimensions,
   StatusBar,
-  Platform,
 } from 'react-native';
 import { FlashList } from '@shopify/flash-list';
-import { GestureHandlerRootView, LongPressGesture, GestureDetector } from 'react-native-gesture-handler';
 import { router } from 'expo-router';
 import { v4 as uuidv4 } from 'uuid';
-import { useSQLiteContext } from 'expo-sqlite';
-
 import PecsCard from '../../components/PecsCard';
 import SentenceStrip from '../../components/SentenceStrip';
 import SpeakButton from '../../components/SpeakButton';
@@ -110,7 +106,7 @@ export default function ChildScreen() {
   }, []);
 
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
+    <>
       <StatusBar hidden />
       <View
         style={styles.container}
@@ -146,7 +142,7 @@ export default function ChildScreen() {
           onCancel={() => setPinVisible(false)}
         />
       </View>
-    </GestureHandlerRootView>
+    </>
   );
 }
 

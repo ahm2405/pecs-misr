@@ -21,7 +21,7 @@ import CategoryPicker from '../../components/CategoryPicker';
 import AudioStatusBadge from '../../components/AudioStatusBadge';
 import { generateAudio } from '../../services/audio';
 import { saveImageFromUri } from '../../services/fileStorage';
-import { getSetting, updateCard } from '../../services/database';
+import { getSetting } from '../../services/database';
 
 export default function AddCard() {
   const db = useSQLiteContext();

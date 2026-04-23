@@ -97,12 +97,16 @@ export async function preGenerateDefaultAudio(
   apiKey: string,
   voiceId: string,
   cards: Card[],
-  onProgress: (done: number, total: number) => void
+  onProgress: (done: number, total: number) => void,
+  onCardDone?: (cardId: string, audioPath: string) => Promise<void>
 ): Promise<void> {
   let done = 0;
   for (const card of cards) {
     if (!card.audio_path) {
-      await generateAudio(card.word_arabic, card.id, apiKey, voiceId);
+      const path = await generateAudio(card.word_arabic, card.id, apiKey, voiceId);
+      if (path && onCardDone) {
+        await onCardDone(card.id, path);
+      }
     }
     done++;
     onProgress(done, cards.length);

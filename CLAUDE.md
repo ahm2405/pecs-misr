@@ -44,7 +44,7 @@ people #FFD700 · actions #4CAF50 · food #FF9800
 places #2196F3 · feelings #F44336 · other #9C27B0
 
 ## Current build status
-Last completed: GitHub repo created and pushed
+Last completed: bugfixes — audio_path DB write, unused imports, redundant GestureHandlerRootView
 Next up: npx expo start — test the app end-to-end
 
 - ✅ Phase 1 boilerplate — app.json, tsconfig.json, package.json, babel.config.js

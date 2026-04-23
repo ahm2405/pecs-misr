@@ -12,9 +12,8 @@ import {
 import { router } from 'expo-router';
 import { useSQLiteContext } from 'expo-sqlite';
 import { useParentAuth } from '../hooks/useParentAuth';
-import { getSetting, getAllCards } from '../services/database';
+import { getSetting, getAllCards, updateCard } from '../services/database';
 import { preGenerateDefaultAudio } from '../services/audio';
-import { updateCard } from '../services/database';
 
 type Step = 'pin-a' | 'pin-b' | 'audio' | 'done';
 
@@ -72,10 +71,15 @@ export default function SetupScreen() {
     const cards = await getAllCards(db);
     setAudioTotal(cards.length);
 
-    await preGenerateDefaultAudio(apiKey, voiceId, cards, async (done, total) => {
-      setAudioProgress(done);
-      // Update audio_path in DB for each card after generation
-    });
+    await preGenerateDefaultAudio(
+      apiKey,
+      voiceId,
+      cards,
+      (done) => setAudioProgress(done),
+      async (cardId, audioPath) => {
+        await updateCard(db, cardId, { audio_path: audioPath });
+      }
+    );
 
     await markSetupComplete();
     setGeneratingAudio(false);
