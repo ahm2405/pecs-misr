@@ -44,8 +44,8 @@ people #FFD700 · actions #4CAF50 · food #FF9800
 places #2196F3 · feelings #F44336 · other #9C27B0
 
 ## Current build status
-Last completed: app/_layout.tsx + app/index.tsx
-Next up: GitHub repo creation (Phase 3)
+Last completed: GitHub repo created and pushed
+Next up: npx expo start — test the app end-to-end
 
 - ✅ Phase 1 boilerplate — app.json, tsconfig.json, package.json, babel.config.js
 - ✅ types/index.ts — Card, Parent, Category, AudioStatus, SentenceCard
@@ -73,4 +73,4 @@ Next up: GitHub repo creation (Phase 3)
 - ✅ app/setup.tsx — 2-step PIN creation, optional audio pre-generation with progress bar
 - ✅ app/_layout.tsx — useFonts (Cairo), SQLiteProvider, GestureHandlerRootView, route to /setup or /(child)
 - ✅ app/index.tsx — checks setup_complete → redirects
-- [ ] GitHub repo created and pushed
+- ✅ GitHub repo created and pushed → https://github.com/ahm2405/pecs-misr
