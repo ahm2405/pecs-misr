@@ -37,21 +37,40 @@ All audio cached offline after first generation. Never crash in child mode.
 - Child mode: zero chrome (no headers, no status bar, no tab bar)
 - Audio errors in child mode are completely silent
 - Reanimated only — never use the old Animated API
-- ElevenLabs fallback ser-facing error
+- ElevenLabs fallback to expo-speech is automatic, no user-facing error
 
 ## Category colors
 people #FFD700 · actions #4CAF50 · food #FF9800
 places #2196F3 · feelings #F44336 · other #9C27B0
 
 ## Current build status
-- [ ] Phase 1 Gemini boilerplate — IN PROGRESS
-- [ ] services/database.ts
-- [ ] services/audio.ts
-- [ ] hooks/useParentAuth.ts
-- [ ] components/PecsCard.tsx
-- [ ] components/PinModal.tsx
-- [ ] app/(child)/index.tsx
-- [ ] app/(parent)/index.tsx + add-card.tsx
-- [ ] app/(parent)/settings.tsx + app/setup.tsx
-- [ ] app/_layout.tsx
-- [ ] GitHub repo created
+Last completed: app/_layout.tsx + app/index.tsx
+Next up: GitHub repo creation (Phase 3)
+
+- ✅ Phase 1 boilerplate — app.json, tsconfig.json, package.json, babel.config.js
+- ✅ types/index.ts — Card, Parent, Category, AudioStatus, SentenceCard
+- ✅ constants/categories.ts + constants/defaultCards.ts
+- ✅ services/fileStorage.ts — ensureDir, getPath, saveImage, delete helpers
+- ✅ services/database.ts — initDatabase, getAllCards, addCard, updateCard, deleteCard, getSetting, setSetting, getParent, setParentPin
+- ✅ services/audio.ts — generateAudio, playAudio, speakFallback, playCardAudio, playSequence, preGenerateDefaultAudio
+- ✅ hooks/useParentAuth.ts — hashPin, verifyPin, setupPin, isPinSet, isSetupComplete, markSetupComplete
+- ✅ hooks/useCards.ts — loadCards, createCard, editCard, removeCard
+- ✅ hooks/useAudio.ts — playSingle, playAll, stop, isPlaying state
+- ✅ components/PecsCard.tsx — pixel-perfect, Reanimated spring, haptics, placeholder letter
+- ✅ components/PinModal.tsx — 4-dot indicators, custom 3x4 numpad, shake animation on wrong PIN
+- ✅ components/SentenceStrip.tsx — horizontal FlatList, slide-in Reanimated per card
+- ✅ components/SpeakButton.tsx — pulse loop while speaking, spring press
+- ✅ components/ClearButton.tsx
+- ✅ components/AudioStatusBadge.tsx — grey/orange-spin/green states
+- ✅ components/CategoryPicker.tsx — horizontal scrollable color pills
+- ✅ app/(child)/_layout.tsx — headerShown:false, statusBarHidden
+- ✅ app/(child)/index.tsx — FlashList grid, sentence strip, 5-finger hold→PIN, silent audio errors
+- ✅ app/(parent)/_layout.tsx — Stack with Arabic header
+- ✅ app/(parent)/index.tsx — card grid with edit/delete/AudioStatusBadge
+- ✅ app/(parent)/add-card.tsx — image picker, RTL input, CategoryPicker, Generate Audio, Save
+- ✅ app/(parent)/edit-card.tsx — same as add-card but pre-filled from DB
+- ✅ app/(parent)/settings.tsx — API key, voice ID, test audio, change PINs
+- ✅ app/setup.tsx — 2-step PIN creation, optional audio pre-generation with progress bar
+- ✅ app/_layout.tsx — useFonts (Cairo), SQLiteProvider, GestureHandlerRootView, route to /setup or /(child)
+- ✅ app/index.tsx — checks setup_complete → redirects
+- [ ] GitHub repo created and pushed
