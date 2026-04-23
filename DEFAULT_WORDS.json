@@ -1,0 +1,166 @@
+[
+  {
+    "id": "seed-01",
+    "word_arabic": "ماما",
+    "english_reference": "mama / mom",
+    "category": "people",
+    "position": 1,
+    "placeholder_color": "#FFD700"
+  },
+  {
+    "id": "seed-02",
+    "word_arabic": "بابا",
+    "english_reference": "baba / dad",
+    "category": "people",
+    "position": 2,
+    "placeholder_color": "#FFD700"
+  },
+  {
+    "id": "seed-03",
+    "word_arabic": "عايز",
+    "english_reference": "I want (male speaker)",
+    "category": "actions",
+    "position": 3,
+    "placeholder_color": "#4CAF50",
+    "note": "Use عايزة for female speaker — parent can edit"
+  },
+  {
+    "id": "seed-04",
+    "word_arabic": "مش عايز",
+    "english_reference": "I don't want",
+    "category": "actions",
+    "position": 4,
+    "placeholder_color": "#4CAF50"
+  },
+  {
+    "id": "seed-05",
+    "word_arabic": "أكل",
+    "english_reference": "food / eat",
+    "category": "food",
+    "position": 5,
+    "placeholder_color": "#FF9800"
+  },
+  {
+    "id": "seed-06",
+    "word_arabic": "عصير",
+    "english_reference": "juice",
+    "category": "food",
+    "position": 6,
+    "placeholder_color": "#FF9800"
+  },
+  {
+    "id": "seed-07",
+    "word_arabic": "مية",
+    "english_reference": "water (Egyptian dialect)",
+    "category": "food",
+    "position": 7,
+    "placeholder_color": "#FF9800",
+    "note": "مية is Egyptian dialect for ماء (water)"
+  },
+  {
+    "id": "seed-08",
+    "word_arabic": "حمام",
+    "english_reference": "bathroom / toilet",
+    "category": "places",
+    "position": 8,
+    "placeholder_color": "#2196F3"
+  },
+  {
+    "id": "seed-09",
+    "word_arabic": "بيت",
+    "english_reference": "home / house",
+    "category": "places",
+    "position": 9,
+    "placeholder_color": "#2196F3"
+  },
+  {
+    "id": "seed-10",
+    "word_arabic": "مدرسة",
+    "english_reference": "school",
+    "category": "places",
+    "position": 10,
+    "placeholder_color": "#2196F3"
+  },
+  {
+    "id": "seed-11",
+    "word_arabic": "كويس",
+    "english_reference": "good / okay (Egyptian dialect)",
+    "category": "feelings",
+    "position": 11,
+    "placeholder_color": "#F44336",
+    "note": "كويس is Egyptian dialect for جيد"
+  },
+  {
+    "id": "seed-12",
+    "word_arabic": "مش كويس",
+    "english_reference": "not good / not okay",
+    "category": "feelings",
+    "position": 12,
+    "placeholder_color": "#F44336"
+  },
+  {
+    "id": "seed-13",
+    "word_arabic": "زعلان",
+    "english_reference": "upset / sad",
+    "category": "feelings",
+    "position": 13,
+    "placeholder_color": "#F44336",
+    "note": "زعلانة for female speaker"
+  },
+  {
+    "id": "seed-14",
+    "word_arabic": "العب",
+    "english_reference": "play",
+    "category": "actions",
+    "position": 14,
+    "placeholder_color": "#4CAF50"
+  },
+  {
+    "id": "seed-15",
+    "word_arabic": "نام",
+    "english_reference": "sleep",
+    "category": "actions",
+    "position": 15,
+    "placeholder_color": "#4CAF50"
+  },
+  {
+    "id": "seed-16",
+    "word_arabic": "وجعني",
+    "english_reference": "it hurts / I am in pain",
+    "category": "feelings",
+    "position": 16,
+    "placeholder_color": "#F44336"
+  },
+  {
+    "id": "seed-17",
+    "word_arabic": "تعبان",
+    "english_reference": "tired / unwell",
+    "category": "feelings",
+    "position": 17,
+    "placeholder_color": "#F44336"
+  },
+  {
+    "id": "seed-18",
+    "word_arabic": "برة",
+    "english_reference": "outside",
+    "category": "places",
+    "position": 18,
+    "placeholder_color": "#2196F3"
+  },
+  {
+    "id": "seed-19",
+    "word_arabic": "مساعدة",
+    "english_reference": "help",
+    "category": "actions",
+    "position": 19,
+    "placeholder_color": "#4CAF50"
+  },
+  {
+    "id": "seed-20",
+    "word_arabic": "شكراً",
+    "english_reference": "thank you",
+    "category": "actions",
+    "position": 20,
+    "placeholder_color": "#4CAF50"
+  }
+]
